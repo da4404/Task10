@@ -8,45 +8,49 @@
     tools:context=".MainActivity">
 
     <Switch
-        android:id="@+id/tb"
-        android:layout_width="119dp"
-        android:layout_height="55dp"
+        android:id="@+id/swDN"
+        android:layout_width="188dp"
+        android:layout_height="72dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="50dp"
-        android:text="Switch"
-        android:textOn="on"
+        android:text="click"
         android:textOff="off"
+        android:textOn="on"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ToggleButton
-        android:id="@+id/swDN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/tb"
+        android:layout_width="121dp"
+        android:layout_height="70dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="50dp"
         android:text="ToggleButton"
-        android:textOn="on"
         android:textOff="off"
+        android:textOn="on"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tb" />
+        app:layout_constraintTop_toBottomOf="@id/swDN" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/click"
+        android:layout_width="165dp"
+        android:layout_height="61dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="224dp"
-        android:text="Button"
+        android:onClick="check_image"
+        android:text="Click to check"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/swDN" />
+        app:layout_constraintTop_toBottomOf="@+id/tb"
+        app:layout_constraintVertical_bias="0.511"
+        tools:ignore="OnClick" />
 </androidx.constraintlayout.widget.ConstraintLayout>
