@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void check_image(View view)
     {
-
         if (!swDN.isChecked() && !tb.isChecked())
         {
             screen.setBackgroundResource(R.drawable.image1);
